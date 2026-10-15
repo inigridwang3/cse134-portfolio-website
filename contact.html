@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Past Projects</title>
+    <title>Contact Recruiter - Alex Chen</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body, header, nav, main, footer, section, article, div, fieldset, legend, form, dialog, template {
@@ -24,13 +24,14 @@
 </head>
 <body>
     <header>
-        <h1>Past Projects</h1>
-        <p>Reviewing technical deliverables for entertainment and design enterprises.</p>
+        <h1>Get In Touch</h1>
+        <p>Recruiters and hiring managers from entertainment or design tech companies are welcome to reach out.</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="books.html">Readings</a></li>
                 <li><a href="experiments.html">Experiments</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
             </ul>
@@ -39,22 +40,43 @@
 
     <main>
         <section>
-            <h2>Project 1: Educational Game</h2>
-            <p>Teaches children water-saving techniques</p>
+            <h2>Recruiter Inquiry Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
         </section>
 
-        <article>
-            <h3>Technical Competencies</h3>
-            <ol>
-                <li>C++ & Graphics Programming</li>
-                <li>WebAssembly & WebGL</li>
-                <li>UI/UX Engineering for Design Brands</li>
-            </ol>
-        </article>
+        <dialog open>
+            <p>Note: Forms are currently in view-only preview mode for semantic validation purposes.</p>
+        </dialog>
     </main>
 
     <footer>
-        <p>&copy; 2026 Inigrid Wang. All rights reserved.</p>
+        <p>&copy; 2026 Alex Chen</p>
     </footer>
+    <script>
+        class HelloConsole extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello World!");
+            }
+        }
+        customElements.define('hello-console', HelloConsole);
+    </script>
+    <hello-console></hello-console>
 </body>
 </html>
